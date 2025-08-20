@@ -1,6 +1,6 @@
 //
 //  SearchBarView.swift
-//  
+//
 //
 //
 //
@@ -9,11 +9,11 @@ import SwiftUI
 
 public struct SearchBarView: View {
     @Binding public var text: String
-
+    
     public init(text: Binding<String>) {
         self._text = text
     }
-
+    
     public var body: some View {
         ZStack {
             HStack(spacing: 0) {

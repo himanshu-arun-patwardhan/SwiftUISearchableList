@@ -11,10 +11,10 @@ public struct SwiftUISearchableList<Item: Identifiable, RowContent: View>: View 
     @ObservedObject private var viewModel: SearchableListViewModel<Item>
     private let rowContent: (Item) -> RowContent
     private var onItemTap: ((Item) -> Void)?
-
+    
     @State private var showSearchBar: Bool = true
     @State private var lastOffset: CGFloat = 0
-
+    
     public init(
         viewModel: SearchableListViewModel<Item>,
         onItemTap: ((Item) -> Void)? = nil,
@@ -24,14 +24,14 @@ public struct SwiftUISearchableList<Item: Identifiable, RowContent: View>: View 
         self.onItemTap = onItemTap
         self.rowContent = rowContent
     }
-
+    
     public var body: some View {
         VStack(spacing: 0) {
             if showSearchBar {
                 SearchBarView(text: $viewModel.searchText)
                     .transition(.move(edge: .top).combined(with: .opacity))
             }
-
+            
             ScrollViewReader { proxy in
                 ScrollView {
                     GeometryReader { geo in
