@@ -1,6 +1,6 @@
 //
 //  SearchBarView.swift
-//  SwiftUISearchableList
+//  
 //
 //
 //

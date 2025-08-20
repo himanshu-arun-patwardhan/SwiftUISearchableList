@@ -1,6 +1,6 @@
 //
 //  ScrollOffsetPreferenceKey.swift
-//  SwiftUISearchableList
+//  
 //
 //
 //

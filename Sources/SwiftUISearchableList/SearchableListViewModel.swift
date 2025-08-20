@@ -1,6 +1,6 @@
 //
 //  SearchableListViewModel.swift
-//  SwiftUISearchableList
+//  
 //
 //
 //
